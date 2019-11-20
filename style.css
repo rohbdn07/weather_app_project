@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: 5s slidy infinite;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  transition-duration: 1s;
+
+  /*animation-duration: 3000;*/
+  font-family: sans-serif;
+  color: rgba(199, 26, 26, 0.904);
+}
+
+.background1 {
+  background-image: url(image01.jpg);
+}
+.background2 {
+  background-image: url(image05.jpg);
+}
+.background3 {
+  background-image: url(image03.jpg);
+}
+.background4 {
+  background-image: url(image04.jpg);
+}
+.temperature {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "ZCOOL KuaiLe", cursive;
+}
+
+.location h1 {
+  display: center;
+  margin-top: 40px;
+  color: rgba(199, 26, 26, 0.904);
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+}
+.temperature {
+  flex-direction: column;
+}
+.degree-section {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 20px;
+  color: rgba(199, 26, 26, 0.904);
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 30px;
+}
+
+.temperature-description {
+  font-size: 40px;
+  letter-spacing: 2px;
+  height: 20vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.degree-section span {
+  margin: 30px;
+  font-size: 40px;
+}
+.degree-section h2 {
+  font-size: 40px;
+}
+
+.windspeed h2 {
+  font-size: 25px;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .location h1 {
+    font-size: 40px;
+    letter-spacing: normal;
+  }
+}
