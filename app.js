@@ -26,7 +26,8 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           console.log(data);
-          const { temperature, summary, windSpeed } = data.currently;
+          const { temperature, summary, windSpeed } = data.currently; ///////////use of destructuring method
+
           //set DOM element from the API
           temperaturedegreee.textContent = temperature;
           temperaturedescription.textContent = summary;
